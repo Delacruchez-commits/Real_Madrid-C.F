@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bgimg {
+    min-height: 100vh;
+    background-image:
+        linear-gradient(
+            rgba(66, 98, 172, 0.72),
+            rgba(0, 2, 5, 0.72)
+        ),
+        url("https://images.wallpapersden.com/image/download/real-madrid-football-club-team_Z2dqbmaUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+}
+.navbar img {
+    width: 60px;
+    height: 60px;
+    
+}
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 900px;
+}
+.rightheader button {
+    width: 90px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    background-color: rgb(3, 27, 70);
+    color: gray;
+}
+.rightheader select {
+     width: 90px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    color: rgb(251, 248, 248);
+    background: transparent;
+}
+.leftheader img {
+    width: 80px;
+    height: 70px;
+    object-fit: contain;
+}
+.center {
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+
+}
+.card {
+    margin-top: 20px;
+    border: 0px solid;
+    width: 350px;
+    height: 600px;
+    border-radius: 16px;
+    color: white;
+    text-align: center;
+    
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.cardborder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transition: 0.8s;
+}
+.cardborder :hover {
+    transform: scale(1.05);
+}
+.card img {
+    width: 100%;
+   min-height: 200px;
+    border-radius: 16px;
+}
+.card button {
+    background: transparent;
+    width: 280px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    transition: 0.8s;
+    border-radius: 12px;
+}
+.card ul {
+    margin-top: 15px;
+    list-style-position: inside;
+    font-size: 18px;
+}
+.card h2 {
+    margin-top: 15px;
+    font-size: 30px;
+}
+.card button:hover{
+    background-color: rgb(193, 191, 191);
+}
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.center a {
+    color: white;
+}
+
+.login:has(.loginbox){
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.loginbox{
+    position: relative;
+    width: 350px;
+    max-width: 90%;
+    padding: 30px;
+    background: white;
+    color: #071d49;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+.loginbox img{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.loginbox h2{
+    margin: 10px 0;
+}
+
+.loginbox h3{
+    margin-bottom: 20px;
+}
+
+.loginbox input{
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.loginbox button{
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+}
+
+.loginbox form button{
+    width: 100%;
+    padding: 12px;
+    background: #071d49;
+    color: white;
+    font-size: 16px;
+}
+
+.loginbox form button:hover{
+    background: #244b91;
+}
+
+.loginbox .close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: #d71920;
+    color: white;
+}
+
+#message{
+    margin-top: 15px;
+}

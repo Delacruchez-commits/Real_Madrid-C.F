@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+    border: 0px solid;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    
+}
+.leftheader img{
+    width: 60px;
+    height: 50px;
+}
+.leftheader{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    cursor: pointer;
+    gap: 10px;
+}
+.midheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    cursor: pointer;
+    color: gray;
+   
+}
+.midheader a {
+    transition: 0.8;
+    text-decoration: none;
+    color: gray;
+}
+.midheader a:hover {
+    color: blue;
+}
+.rightheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 5px;
+}
+.gap{
+    gap: 380px;
+}
+
+
+.rightheader img{
+    width: 50px;
+    height: 50px;
+    
+}
+.rightheader a {
+    transition: 0.8;
+}
+.rightheader a {
+    color: blue;
+}
+.shop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+.productbox {
+    border: 0px solid;
+    width: 500px;
+    height: 500px;
+    margin: 30px;
+    border-radius: 16px;
+    text-align: center;
+    transition: 0.5;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(244, 244, 247);
+    transition: 0.4s;
+    
+}
+.productbox img {
+    width: 100%;
+    min-height: 350px;
+    border-radius: 16px;
+    object-fit: cover;
+    
+    
+}
+.productbox:hover {
+    transform: scale(0.8);
+}
+.productbox p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(22, 22, 66);
+}
+.productbox span {
+    transition: 0.5;
+    cursor: pointer;
+}
+/* Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 600px;
+
+    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.productbox:hover .overlay {
+    opacity: 1;
+}
+
+/* Size buttons */
+.overlay span {
+   
+    color: rgb(93, 90, 90);
+    border: 1px solid rgb(124, 122, 122);
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Size hover */
+.overlay span:hover {
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+.footer {
+    border: 1px solid;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 700px;
+}
+.footer p {
+    color: gray;
+    font-size: 14px;
+}
+.rightfooter a{
+    color: gray;
+    font-size: 13px;
+    transition: 0.8;
+}
+.rightfooter a:hover {
+    color: blue;
+}
